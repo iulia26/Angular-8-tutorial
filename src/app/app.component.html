@@ -6,11 +6,19 @@
       <ul>
         <li><a href="#" routerLink="/">Home</a></li>
         <li><a href="#" routerLink="/list">List</a></li>
+        <li><a href='#' routerLink="/charts">Charts</a><li>                         </li>
       </ul>
     </nav>
   </div>
 </header>
 
 <div class="container">
-  <router-outlet></router-outlet>
+
 </div>
+<div id="main-head" style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <app-output-graph></app-output-graph>
+</div>
+<router-outlet></router-outlet>
